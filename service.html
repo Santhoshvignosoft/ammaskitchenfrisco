@@ -27,6 +27,232 @@
 
         <!-- Template Stylesheet -->
         <link href="css/style.css" rel="stylesheet">
+        <style>
+            
+/* Catering Section */
+.catering-section {
+padding: 20px 8%;
+background-image: url('https://c8.alamy.com/comp/M15J5F/healthy-food-background-various-fresh-salad-vegetables-ingredients-M15J5F.jpg') ; 
+      background-repeat:no-repeat; 
+      background-size: cover;
+       background-position: center; 
+       background-attachment:fixed;
+
+}
+
+.catering-container {
+display: flex;
+align-items: center;
+gap: 30px;
+flex-wrap: wrap;
+margin: 80px auto;
+      
+
+}
+
+.catering-image img {
+width: 100%;
+max-width: 450px;
+border-radius: 8px;
+box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.catering-content {
+flex: 1;
+}
+
+.catering-content h2 {
+font-size: 28px;
+color: #c0392b;
+margin-bottom: 15px;
+}
+
+.catering-content p {
+margin-bottom: 15px;
+font-size: 12px;
+color: #444;
+}
+
+.btn {
+display: inline-block;
+padding: 12px 20px;
+background: #e67e22;
+color: #fff;
+text-decoration: none;
+border-radius: 4px;
+transition: 0.3s;
+}
+
+.btn:hover {
+background: #d35400;
+}
+.catering-request {
+    margin-left: 500px;
+    
+}
+@media (max-width:768px){
+  .catering-request{
+    margin-left:50px;
+  }
+}
+</style>
+
+<!-- table -->
+ <style>
+    
+
+    .form-container {
+      background: #fff;
+      padding: 25px 30px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      width: 800px;
+      margin-left: 330px;
+      color: #033f26;
+    }
+    @media(max-width:768px){
+      .form-container{
+        margin-left:10px;
+        width:350px;
+      }
+    }
+
+    .form-container h3 {
+      margin-bottom: 20px;
+      font-size: 18px;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 5px;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+      font-size: 14px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="date"],
+    input[type="time"],
+    textarea {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #aaa;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+
+    textarea {
+      height: 80px;
+      resize: none;
+    }
+
+    .checkbox-group,
+    .radio-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      font-size: 14px;
+    }
+
+    .checkbox-group label,
+    .radio-group label {
+      font-weight: normal;
+    }
+
+    .form-actions {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+    }
+
+    .btn {
+      background: #0b7c4d;
+      color: white;
+      padding: 8px 16px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+
+    .btn:hover {
+      background: #095c39;
+    }
+  </style>
+  <!-- captcha -->
+   <style>
+       .captcha-box {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 320px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      padding: 12px;
+      background: #fff;
+    }
+
+    .captcha-left {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .captcha-left input[type="checkbox"] {
+      width: 20px;
+      height: 20px;
+      cursor: pointer;
+    }
+
+    .captcha-left label {
+      font-size: 14px;
+      color: #333;
+      cursor: pointer;
+    }
+
+    .captcha-logo {
+      text-align: center;
+      font-size: 10px;
+      color: #777;
+    }
+
+    .captcha-logo img {
+      width: 40px;
+      display: block;
+      margin: 0 auto 3px;
+    }
+
+    .buttons {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    .buttons button {
+      background: #006644;
+      color: #fff;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 6px;
+      font-size: 14px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .buttons button:hover {
+      background: #004d33;
+    }
+  </style>
+
+        </style>
     </head>
 
     <body>
@@ -110,7 +336,98 @@
         </div>
         <!-- Hero End -->
 
+<!-- table -->
 
+  <div class="catering-request">
+<h2><b>Catering Request Form</b>
+</h2>
+<p>Fill the form to inquire about our catering services
+
+</p>
+</div><br><br>
+<header>
+    <div class="form-container">
+    <h3>Personal Information</h3>
+    <form>
+      <div class="form-group">
+        <label>First Name</label>
+        <input type="text" placeholder="First Name">
+      </div>
+
+      <div class="form-group">
+        <label>Last Name</label>
+        <input type="text" placeholder="Last Name">
+      </div>
+
+      <div class="form-group">
+        <label>Email</label>
+        <input type="email" placeholder="Email">
+      </div>
+
+      <div class="form-group">
+        <label>Phone</label>
+        <input type="tel" placeholder="Enter Your Phone Number">
+      </div>
+
+      <div class="form-group">
+        <label>Date of Event</label>
+        <input type="date">
+      </div>
+
+      <div class="form-group">
+        <label>Type of Catering</label>
+        <div class="checkbox-group">
+          <label><input type="checkbox"> Box Lunch</label>
+          <label><input type="checkbox"> Party Trays</label>
+          <label><input type="checkbox"> Buffet</label>
+          <label><input type="checkbox"> Catering</label>
+          <label><input type="checkbox"> Weddings</label>
+          <label><input type="checkbox"> Large Celebrations</label>
+          <label><input type="checkbox"> Private Dining</label>
+          <label><input type="checkbox"> Live Counter</label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Time of Event</label>
+        <div class="radio-group">
+          <label><input type="radio" name="time"> Lunch</label>
+          <label><input type="radio" name="time"> Breakfast</label>
+          <label><input type="radio" name="time"> Dinner</label>
+          <label><input type="radio" name="time"> Other</label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Pickup/Delivery Time</label>
+        <input type="time">
+      </div>
+
+      <div class="form-group">
+        <label>Message to Management</label>
+        <textarea placeholder="Write your message here..."></textarea>
+      </div>
+      <div>
+    <!-- Captcha Box -->
+    <div class="captcha-box">
+      <div class="captcha-left">
+        <input type="checkbox" id="not-robot">
+        <label for="not-robot">I'm not a robot</label>
+      </div>
+      <div class="captcha-logo">
+        <img src="https://www.gstatic.com/recaptcha/api2/logo_48.png" alt="captcha logo">
+        <div>reCAPTCHA</div>
+        <div><a href="#">Privacy</a> - <a href="#">Terms</a></div>
+      </div>
+    </div>
+
+    <!-- Buttons -->
+    <div class="buttons">
+      <button type="submit">Submit</button>
+      <button type="reset">Reset Form</button>
+    </div>
+  </div></header><br>
+  <!-- table end -->
         <!-- Service Start -->
         <div class="container-fluid service py-6">
             <div class="container">
@@ -420,7 +737,9 @@
                     <div class="col-lg-3 col-md-6">
                         <div class="footer-item">
                               <h1 class="text-primary fw-bold mb-0">Amma's<span class="text-dark"> Kitchen Frisco</span> </h1>
-                            <p class="lh-lg mb-4">There cursus massa at urnaaculis estieSed aliquamellus vitae ultrs condmentum leo massamollis its estiegittis miristum.</p>
+                            <p class="lh-lg mb-4"><i>Welcome to Amma's Kitchen, a brand-new dining destination in the heart of Frisco!
+                                 Our menu blends authentic recipes offering something for everyone—
+                                 from hearty family favorites to lighter, wholesome choices.</i></p>
                             <div class="footer-icon d-flex">
                                 <a class="btn btn-primary btn-sm-square me-2 rounded-circle" href=""><i class="fab fa-facebook-f"></i></a>
                                 <a class="btn btn-primary btn-sm-square me-2 rounded-circle" href=""><i class="fab fa-twitter"></i></a>
@@ -444,10 +763,15 @@
                         <div class="footer-item">
                             <h4 class="mb-4">Contact Us</h4>
                             <div class="d-flex flex-column align-items-start">
-                                <p><i class="fa fa-map-marker-alt text-primary me-2"></i> 123 Street, New York, USA</p>
-                                <p><i class="fa fa-phone-alt text-primary me-2"></i> (+012) 3456 7890 123</p>
-                                <p><i class="fas fa-envelope text-primary me-2"></i> info@example.com</p>
-                                <p><i class="fa fa-clock text-primary me-2"></i> 26/7 Hours Service</p>
+                                <p><i class="fa fa-map-marker-alt text-primary me-2"></i> 7967 Custer Rd Ste 200,
+Frisco, TX 75035</p>
+                                <p><i class="fa fa-phone-alt text-primary me-2"></i> 972-970-6777
+
+</p>
+                                <p><i class="fas fa-envelope text-primary me-2"></i>Info@AmmasKitchenFrisco.com
+
+</p>
+                                <p><i class="fa fa-clock text-primary me-2"></i> 24/7 Hours Service</p>
                             </div>
                         </div>
                     </div>
@@ -487,13 +811,13 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        <span class="text-light"><a href="#"><i class="fas fa-copyright text-light me-2"></i>Your Site Name</a>, All right reserved.</span>
+                        <span class="text-light"><a href="#"></i>© 2025 Amma's Kitchen Frisco, All Rights Reserved</a></span>
                     </div>
                     <div class="col-md-6 my-auto text-center text-md-end text-white">
                         <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
                         <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
                         <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
-                        Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a>
+                        Powered By <a class="border-bottom" href="#">Mindwhile IT Solutions Pvt Ltd</a>
                     </div>
                 </div>
             </div>
