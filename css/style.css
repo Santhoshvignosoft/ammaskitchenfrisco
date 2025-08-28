@@ -239,6 +239,15 @@ h4, h5, h6, .h4, .h5, .h6 {
 .menu .menu-item .border-bottom {
     border-bottom-style: dashed !important;
 }
+
+.menu .menu-item img {
+    width: 17%;
+   aspect-ratio: 1 / 1;
+   object-fit: cover;
+}
+
+
+
 /*** Menu End ***/
 
 
